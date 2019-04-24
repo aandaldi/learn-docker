@@ -17,7 +17,7 @@
     These command instruct npm to download all the dependencies your project needs and then launch your application. 
 
 4.  Create dockerfile
-    ==========================================
+    #==========================================
     #build stage
     FROM node:lts-alpine as build-stage
     WORKDIR /app
@@ -31,7 +31,7 @@
     COPY --from=build-stage /app/dist /usr/share/nginx/html
     EXPOSE 80
     CMD ["nginx", "-g", "daemon off;"]
-    =================================================
+    #=================================================
     Ok, let’s see what’s going on here:
     we have split our original Dockerfile in multiple stages by leveraging the Docker multi-stage builds feature;
     the first stage is responsible for building a production-ready artifact of our Vue.js app;
