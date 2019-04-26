@@ -1,5 +1,3 @@
 # learn-docker
 
-``` markdown
-*Hello* **world!**
-```
+```docker ps```
