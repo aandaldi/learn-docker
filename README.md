@@ -16,7 +16,7 @@
 ```docker run -dit -p 122:22 -p 180:80 --rm --name portalweb --hostname portalweb nama_image ```  contoh
 ```--rm ``` untuk menghapus container setelah container di stop
 
-###UPLOAD DOCKER
+### UPLOAD DOCKER
 ```docker login```
 ```docker images```
 ```docker push aandaldi/nama_image```

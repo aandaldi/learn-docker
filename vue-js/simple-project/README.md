@@ -10,14 +10,14 @@
 
     Entering the above command will begin the process of creating a new vue application. It will be created in the directory my-vue-app, you just need to wait for the template to download then answer some configuration questions, it is safe to leave the default answers for now.
 
-3.  ~~~cd my-vue-app
+3.  ~~~ cd my-vue-app
     npm install
-    npm run dev~~~         #this code to run app on local machine
+    npm run dev ~~~        #this code to run app on local machine
 
     These command instruct npm to download all the dependencies your project needs and then launch your application. 
 
 4.  Create dockerfile
-    #==========================================
+    ~~~ 
     #build stage
     FROM node:lts-alpine as build-stage
     WORKDIR /app
@@ -30,8 +30,8 @@
     FROM nginx:stable-alpine as production-stage
     COPY --from=build-stage /app/dist /usr/share/nginx/html
     EXPOSE 80
-    CMD ["nginx", "-g", "daemon off;"]
-    #=================================================
+    CMD ["nginx", "-g", "daemon off;"] 
+    ~~~
     Ok, let’s see what’s going on here:
     we have split our original Dockerfile in multiple stages by leveraging the Docker multi-stage builds feature;
     the first stage is responsible for building a production-ready artifact of our Vue.js app;
