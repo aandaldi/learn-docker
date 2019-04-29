@@ -10,9 +10,12 @@
 
     Entering the above command will begin the process of creating a new vue application. It will be created in the directory my-vue-app, you just need to wait for the template to download then answer some configuration questions, it is safe to leave the default answers for now.
 
-3.  ~~~ cd my-vue-app
+3.  ~~~ 
+    cd my-vue-app
     npm install
-    npm run dev ~~~        #this code to run app on local machine
+    npm run dev 
+    ~~~        
+    #this code to run app on local machine
 
     These command instruct npm to download all the dependencies your project needs and then launch your application. 
 
@@ -40,7 +43,7 @@
     Nevertheless, for realistically complex production use cases, it may be wiser to stand on the shoulders of some giant like NGINX or Apache and that is exactly what we are going to do next: we are about to leverage NGINX to serve our Vue.js app because it is considered to be one of the most performant and battle-tested solutions out there.
 
 5.  build docker image
-    ~docker build -t simple-vue-js .~
+    ~ docker build -t simple-vue-js . ~
 
 6.  run docker image 
     `docker run -d -p 8080:80 --rm --name simple-vue-js1 simple-vue-js`
