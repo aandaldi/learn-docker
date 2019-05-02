@@ -21,7 +21,7 @@
 ```docker images```
 ```docker push aandaldi/nama_image```
 
-### Docker-Compose
+### DOCKER COMPOSE
 1. ``` docker-compose up```         untuk running docker compose
 2. ``` docker-compose up -d --force-recreate --build``` untuk rebuild docker compose
 
