@@ -59,7 +59,12 @@
     ``` docker-compose up -d --force-recreate --build```
     don't forget to grant all previlage to user.
 ~~~ SELECT User,authentication_string FROM mysql.user;
-GRANT ALL ON *.* TO 'root'@'%' IDENTIFIED BY PASSWORD '*81F5E21E35407D884A6CD4A731AEBFB6AF209E1B';~~~
+GRANT ALL ON *.* TO 'root'@'%' IDENTIFIED BY PASSWORD '*81F5E21E35407D884A6CD4A731AEBFB6AF209E1B';
+
+
+
+
+~~~
 
 #### Example sql database and table
  ~~~
